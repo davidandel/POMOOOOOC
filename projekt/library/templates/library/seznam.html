@@ -1,0 +1,6 @@
+<h1>Seznam receptů</h1>
+<ul>
+  {% for recept in recepty %}
+    <li><a href="{% url 'detail_receptu' recept.id %}">{{ recept.nazev }}</a></li>
+  {% endfor %}
+</ul>
